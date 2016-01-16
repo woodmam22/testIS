@@ -26,14 +26,10 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=test',
-			'emulatePrepare' => true,
-			'username' => 'admin',
-			'password' => 'admin',
-			'charset' => 'utf8',
-			'tablePrefix' => 'tbl_',
-		),
+        'db'=>array(
+            'connectionString' => 'sqlite:protected/data/blog.db',
+            'tablePrefix' => 'tbl_',
+        ),
 		// uncomment the following to use a MySQL database
 		/*
 		'db'=>array(
